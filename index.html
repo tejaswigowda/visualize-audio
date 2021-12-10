@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Meyda</title>
+  <title></title>
   <link rel="stylesheet" href="index_files/bootstrap.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
@@ -76,4 +76,13 @@
 </div>
   
 
-</body></html>
+</body>
+<script>
+function checkGunshot(cl){
+  if(cl.amplitudeSpectrum[6]> 1 && cl.spectralCentroid>60){
+    return "Gunshot"; 
+  }
+  return "";
+}
+</script>
+</html>
